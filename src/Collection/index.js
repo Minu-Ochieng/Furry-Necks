@@ -10,16 +10,18 @@ const Products = () => {
     <div className="details">
       {loading && <h2>loading porducts ...</h2>}
       {error && <h2>{error}</h2>}
-      {products.length>0 ? products.map((product) => (
+      {products.length > 0
+        ? products.map((product) => (
             <ProductCard
               key={product.id}
               image={product.image}
               title={`${product.title}`}
-              price={product.price}
+              price={`Price : Ksh ${product.price} `}
               category={product.category}
               description={product.description}
             />
-          )) : !loading && <h2>No products found </h2>}
+          ))
+        : !loading && <h2>No products found </h2>}
     </div>
   );
 };
