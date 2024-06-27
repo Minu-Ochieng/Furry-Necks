@@ -1,0 +1,12 @@
+.discount {
+  background-color: black;
+  color: #fff;
+  height: px;
+  font-size: 17px;
+}
+.landing-page-pic {
+  border-radius: 36px;
+  /* width: 800px; */
+  object-fit: cover;
+  /* height: 900px; */
+}
